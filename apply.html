@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply as Project Developer | CFIF</title>
+  <meta name="description" content="Submit your clean fuel or emissions-reduction project for CFIF funding consideration. Non-repayable grants for eligible Canadian projects under the Clean Fuel Regulations.">
+  <link rel="canonical" href="https://www.cleanfuels.ca/apply.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Apply as Project Developer | CFIF">
+  <meta property="og:description" content="Submit your clean fuel or emissions-reduction project for CFIF funding consideration.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cleanfuels.ca/apply.html">
+  <meta property="og:site_name" content="Clean Fuels Investment Fund">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Apply as Project Developer | CFIF">
+  <meta name="twitter:description" content="Submit your clean fuel or emissions-reduction project for CFIF funding consideration.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .apply-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .apply-grid .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    @media (max-width: 768px) {
+      .apply-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;">
+        CFIF
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="why-cfif.html">Why CFIF</a></li>
+        <li><a href="investment.html">Investment Strategy</a></li>
+        <li><a href="governance.html">Governance</a></li>
+        <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="apply.html" class="active">Apply</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Apply as a Project Developer</h1>
+    <p>Submit your clean fuel or emissions-reduction project for CFIF funding consideration.</p>
+  </header>
+
+  <!-- ELIGIBILITY -->
+  <section class="section">
+    <div class="container prose">
+      <span class="section-label fade-in">Eligibility</span>
+      <h2 class="fade-in">Who Can Apply</h2>
+
+      <p class="fade-in">CFIF deploys 100% of contributed funds as non-repayable grants to eligible clean fuel and emissions-reduction projects across Canada. We welcome applications from project developers at any stage, from early concept to construction-ready.</p>
+
+      <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:32px;margin:28px 0;" class="fade-in">
+        <h3 style="color:#1C5D7E;margin:0 0 20px;font-size:1.1rem;">Project Eligibility Criteria</h3>
+        <ul style="margin:0;padding-left:20px;">
+          <li style="margin-bottom:10px;">Eligible under Canada's Clean Fuel Regulations</li>
+          <li style="margin-bottom:10px;">Located in Canada</li>
+          <li style="margin-bottom:10px;">Demonstrated emissions-reduction or clean fuel production potential</li>
+          <li style="margin-bottom:10px;">Credible project proponent with execution track record</li>
+          <li style="margin-bottom:10px;">Clear pathway to compliance credit generation</li>
+          <li>Third-party verifiable outcomes</li>
+        </ul>
+      </div>
+
+      <h2 class="fade-in">Project Types</h2>
+
+      <div class="card-grid fade-in">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v8l4-2"/>
+              <path d="M12 2v8l-4-2"/>
+              <circle cx="12" cy="18" r="4"/>
+            </svg>
+          </div>
+          <h3>Low-Carbon Fuel Production</h3>
+          <p>Renewable diesel, SAF, RNG, hydrogen, ethanol, biodiesel, and co-processed fuels.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Emissions Reduction</h3>
+          <p>Process efficiency, methane capture, carbon capture, and fuel production decarbonization.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="6" width="20" height="12" rx="2"/>
+              <path d="M12 12h.01"/>
+              <path d="M17 12h.01"/>
+              <path d="M7 12h.01"/>
+            </svg>
+          </div>
+          <h3>Enabling Infrastructure</h3>
+          <p>Blending terminals, distribution networks, EV charging, and hydrogen fueling stations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPLICATION FORM -->
+  <section class="section section-light">
+    <div class="container prose">
+      <span class="section-label fade-in">Application</span>
+      <h2 class="fade-in">Submit Your Project</h2>
+      <p class="fade-in">Complete the form below and our investment team will review your submission within 10 business days.</p>
+
+      <form action="mailto:CFIF@cleanfuels.ca" method="POST" enctype="text/plain" style="margin-top:32px;" class="fade-in">
+        <div class="apply-grid">
+          <div class="form-group">
+            <label for="org_name">Organization Name <span style="color:#E74C3C;">*</span></label>
+            <input type="text" id="org_name" name="Organization" required placeholder="Your organization">
+          </div>
+          <div class="form-group">
+            <label for="contact_name">Contact Name <span style="color:#E74C3C;">*</span></label>
+            <input type="text" id="contact_name" name="Contact" required placeholder="Full name">
+          </div>
+          <div class="form-group">
+            <label for="contact_email">Email <span style="color:#E74C3C;">*</span></label>
+            <input type="email" id="contact_email" name="Email" required placeholder="you@organization.com">
+          </div>
+          <div class="form-group">
+            <label for="contact_phone">Phone</label>
+            <input type="tel" id="contact_phone" name="Phone" placeholder="+1 (xxx) xxx-xxxx">
+          </div>
+          <div class="form-group">
+            <label for="project_type">Project Type <span style="color:#E74C3C;">*</span></label>
+            <select id="project_type" name="Project_Type" required>
+              <option value="">Select project type</option>
+              <option value="Renewable Diesel">Renewable Diesel</option>
+              <option value="Sustainable Aviation Fuel (SAF)">Sustainable Aviation Fuel (SAF)</option>
+              <option value="Renewable Natural Gas (RNG)">Renewable Natural Gas (RNG)</option>
+              <option value="Hydrogen Production">Hydrogen Production</option>
+              <option value="Ethanol / Biodiesel">Ethanol / Biodiesel</option>
+              <option value="Carbon Capture">Carbon Capture</option>
+              <option value="Emissions Reduction">Emissions Reduction</option>
+              <option value="Enabling Infrastructure">Enabling Infrastructure</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="province">Province / Territory <span style="color:#E74C3C;">*</span></label>
+            <select id="province" name="Province" required>
+              <option value="">Select province</option>
+              <option value="AB">Alberta</option>
+              <option value="BC">British Columbia</option>
+              <option value="MB">Manitoba</option>
+              <option value="NB">New Brunswick</option>
+              <option value="NL">Newfoundland and Labrador</option>
+              <option value="NS">Nova Scotia</option>
+              <option value="NT">Northwest Territories</option>
+              <option value="NU">Nunavut</option>
+              <option value="ON">Ontario</option>
+              <option value="PE">Prince Edward Island</option>
+              <option value="QC">Quebec</option>
+              <option value="SK">Saskatchewan</option>
+              <option value="YT">Yukon</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ci_reduction">Estimated CI Reduction (gCO2e/MJ)</label>
+            <input type="text" id="ci_reduction" name="CI_Reduction" placeholder="e.g., 40-60 gCO2e/MJ">
+          </div>
+          <div class="form-group">
+            <label for="project_stage">Project Stage <span style="color:#E74C3C;">*</span></label>
+            <select id="project_stage" name="Project_Stage" required>
+              <option value="">Select stage</option>
+              <option value="Concept / Pre-feasibility">Concept / Pre-feasibility</option>
+              <option value="Feasibility Study">Feasibility Study</option>
+              <option value="Engineering / Design">Engineering / Design</option>
+              <option value="Permitting">Permitting</option>
+              <option value="Construction Ready">Construction Ready</option>
+              <option value="Under Construction">Under Construction</option>
+              <option value="Operational / Expansion">Operational / Expansion</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="project_desc">Project Description <span style="color:#E74C3C;">*</span></label>
+            <textarea id="project_desc" name="Description" required placeholder="Describe your project: technology, feedstock, capacity, expected credit generation, and timeline."></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:8px;">Submit Application</button>
+      </form>
+
+      <p style="margin-top:24px;font-size:0.9rem;color:var(--text-light);">Or email your project summary directly to <a href="mailto:CFIF@cleanfuels.ca" style="font-weight:600;">CFIF@cleanfuels.ca</a></p>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="container prose">
+      <span class="section-label fade-in">Review Process</span>
+      <h2 class="fade-in">What Happens Next</h2>
+      <div class="steps fade-in">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Initial Review</h3>
+          <p>CFIF's investment team reviews your submission for eligibility and alignment with fund criteria.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Due Diligence</h3>
+          <p>Selected projects undergo technical feasibility review, CI pathway analysis, and credit generation modelling.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Committee Decision</h3>
+          <p>The investment committee evaluates and approves projects for non-repayable grant funding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="section section-light">
+    <div class="container prose">
+      <div class="disclaimer">Submitting a project application does not guarantee funding. All projects are subject to CFIF's due diligence process and investment committee approval. CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval.</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="28" style="max-height:28px;width:auto;opacity:0.85;">
+        <div class="footer-text">
+          <span class="footer-url">cleanfuels.ca</span><br>
+          Clean Fuels Investment Fund (CFIF) Inc.
+        </div>
+      </div>
+      <div class="footer-text" style="text-align:right;">
+        <a href="index.html">Home</a> &nbsp;|&nbsp;
+        <a href="why-cfif.html">Why CFIF</a> &nbsp;|&nbsp;
+        <a href="investment.html">Investment Strategy</a> &nbsp;|&nbsp;
+        <a href="governance.html">Governance</a> &nbsp;|&nbsp;
+        <a href="contribute.html">Contribute</a> &nbsp;|&nbsp;
+        <a href="apply.html">Apply</a>
+        <div style="margin-top:6px;font-size:0.8rem;color:rgba(255,255,255,0.4);font-style:italic;">CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    /* Hamburger toggle */
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+
+    /* IntersectionObserver fade-in */
+    (function() {
+      if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          observer.observe(el);
+        });
+      } else {
+        document.querySelectorAll('.fade-in').forEach(function(el) {
+          el.classList.add('visible');
+        });
+      }
+    })();
+  </script>
+
+</body>
+</html>

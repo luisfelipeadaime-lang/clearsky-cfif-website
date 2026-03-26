@@ -37,6 +37,9 @@
       opacity: 1;
       transform: translateY(0);
     }
+    @media (max-width: 768px) {
+      .team-grid { grid-template-columns: 1fr !important; }
+    }
   </style>
 </head>
 <body>
@@ -45,12 +48,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="#1D5D7E" stroke-width="2.5"/>
-          <path d="M12 26 C14 16, 20 12, 28 14" stroke="#2E8B57" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <path d="M12 26 C16 22, 22 20, 28 22" stroke="#1D5D7E" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <circle cx="28" cy="14" r="2.5" fill="#2E8B57"/>
-        </svg>
+        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;">
         CFIF
       </a>
       <ul class="nav-links" id="navLinks">
@@ -59,6 +57,7 @@
         <li><a href="investment.html">Investment Strategy</a></li>
         <li><a href="governance.html" class="active">Governance</a></li>
         <li><a href="contribute.html">Contribute</a></li>
+        <li><a href="apply.html">Apply</a></li>
       </ul>
       <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
         <span></span>
@@ -160,23 +159,23 @@
       <!-- ─── Team ────────────────────────────── -->
       <h2 class="fade-in">Leadership Team</h2>
 
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:28px 0;" class="fade-in">
+      <div class="team-grid fade-in" style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin:28px 0;">
         <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:28px;text-align:center;">
-          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1D5D7E,#2E8B57);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">AA</div>
-          <h3 style="font-size:1.05rem;color:#1D5D7E;margin:0 0 4px;">Ana Avramovic</h3>
-          <p style="font-size:0.85rem;color:#2E8B57;font-weight:600;margin:0 0 12px;">Executive Director</p>
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1C5D7E,#6BBD45);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">AA</div>
+          <h3 style="font-size:1.05rem;color:#1C5D7E;margin:0 0 4px;">Ana Avramovic</h3>
+          <p style="font-size:0.85rem;color:#6BBD45;font-weight:600;margin:0 0 12px;">Executive Director</p>
           <p style="font-size:0.88rem;line-height:1.55;color:#555;margin:0;">Leads CFIF's strategy, stakeholder engagement, and fund operations. Drives industry partnerships and regulatory alignment.</p>
         </div>
         <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:28px;text-align:center;">
-          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1D5D7E,#2E8B57);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">JC</div>
-          <h3 style="font-size:1.05rem;color:#1D5D7E;margin:0 0 4px;">Jonathan Cocker</h3>
-          <p style="font-size:0.85rem;color:#2E8B57;font-weight:600;margin:0 0 12px;">Operations &amp; Development Director</p>
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1C5D7E,#6BBD45);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">JC</div>
+          <h3 style="font-size:1.05rem;color:#1C5D7E;margin:0 0 4px;">Jonathan Cocker</h3>
+          <p style="font-size:0.85rem;color:#6BBD45;font-weight:600;margin:0 0 12px;">Operations &amp; Development Director</p>
           <p style="font-size:0.88rem;line-height:1.55;color:#555;margin:0;">Oversees fund operations, project development pipeline, and contributor onboarding processes.</p>
         </div>
         <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:28px;text-align:center;">
-          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1D5D7E,#2E8B57);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">KD</div>
-          <h3 style="font-size:1.05rem;color:#1D5D7E;margin:0 0 4px;">Keith Driver</h3>
-          <p style="font-size:0.85rem;color:#2E8B57;font-weight:600;margin:0 0 12px;">Technical Director</p>
+          <div style="width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#1C5D7E,#6BBD45);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.5rem;font-weight:700;color:#fff;">KD</div>
+          <h3 style="font-size:1.05rem;color:#1C5D7E;margin:0 0 4px;">Keith Driver</h3>
+          <p style="font-size:0.85rem;color:#6BBD45;font-weight:600;margin:0 0 12px;">Technical Director</p>
           <p style="font-size:0.88rem;line-height:1.55;color:#555;margin:0;">Leads technical due diligence, project evaluation, and clean fuel technology assessment for the fund's portfolio.</p>
         </div>
       </div>
@@ -205,12 +204,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
-          <circle cx="20" cy="20" r="18" stroke="rgba(255,255,255,0.5)" stroke-width="2.5"/>
-          <path d="M12 26 C14 16, 20 12, 28 14" stroke="#2E8B57" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-          <path d="M12 26 C16 22, 22 20, 28 22" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" stroke-linecap="round"/>
-          <circle cx="28" cy="14" r="2.5" fill="#2E8B57"/>
-        </svg>
+        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="28" style="max-height:28px;width:auto;opacity:0.85;">
         <div class="footer-text">
           <span class="footer-url">cleanfuels.ca</span><br>
           Clean Fuels Investment Fund (CFIF) Inc.<br>
@@ -224,7 +218,8 @@
         <a href="why-cfif.html">Why CFIF</a> &nbsp;|&nbsp;
         <a href="investment.html">Investment Strategy</a> &nbsp;|&nbsp;
         <a href="governance.html">Governance</a> &nbsp;|&nbsp;
-        <a href="contribute.html">Contribute</a>
+        <a href="contribute.html">Contribute</a> &nbsp;|&nbsp;
+        <a href="apply.html">Apply</a>
       </div>
     </div>
   </footer>

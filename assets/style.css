@@ -1,14 +1,14 @@
 /* CFIF Design System — Clean Fuels Investment Fund */
-/* Primary: #1D5D7E | Secondary: #2E8B57 | Neutral: #F8F9FA bg, #333 text */
+/* Primary: #1C5D7E | Secondary: #6BBD45 | Dark Green: #4F9532 | Neutral: #F8F9FA bg, #333 text */
 /* Font: Montserrat (Google Fonts) */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #1D5D7E;
+  --primary: #1C5D7E;
   --primary-dark: #164A65;
   --primary-light: #E8F1F5;
-  --secondary: #2E8B57;
+  --secondary: #6BBD45;
   --secondary-light: #E6F4EC;
   --neutral-bg: #F8F9FA;
   --neutral-dark: #E9ECEF;
@@ -176,7 +176,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .btn-primary:hover {
-  background: #257A4A;
+  background: #4F9532;
   color: var(--white);
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
