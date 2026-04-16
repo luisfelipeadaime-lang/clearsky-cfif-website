@@ -102,30 +102,47 @@
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;">
-        CFIF
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="CFIF Home">
+        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="38" style="max-height:38px;width:auto;">
+        <span>CFIF</span>
         <span class="eccc-pill">ECCC Approval Pending</span>
       </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="why-cfif.html">For Primary Suppliers</a></li>
-        <li><a href="investment.html">Fund Mechanics</a></li>
-        <li><a href="governance.html">Governance</a></li>
-        <li><a href="contribute.html" class="active">Contribute</a></li>
-        <li><a href="apply.html">For Project Developers</a></li>
-        <li><a href="contribute.html" class="nav-cta">Get in Touch</a></li>
-      </ul>
-      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-cfif.html">For Primary Suppliers</a></li>
+          <li><a href="investment.html">Fund Mechanics</a></li>
+          <li><a href="governance.html">Governance</a></li>
+          <li><a href="contribute.html" class="active">Contribute</a></li>
+          <li><a href="apply.html">For Project Developers</a></li>
+          <li><a href="contribute.html" class="nav-cta-btn">Get in Touch</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
       </button>
     </div>
-  </nav>
+  </header>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="why-cfif.html">For Primary Suppliers</a>
+    <a href="investment.html">Fund Mechanics</a>
+    <a href="governance.html">Governance</a>
+    <a href="contribute.html" class="active">Contribute</a>
+    <a href="apply.html">For Project Developers</a>
+    <a href="contribute.html" style="color:#6BBD45;font-weight:600;">Get in Touch</a>
+  </div>
 
   <!-- PAGE HEADER -->
   <header class="page-header">
@@ -274,7 +291,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-col-brand">
-        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo">
+        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;opacity:0.9;">
         <span class="tagline">By industry, for industry.</span>
         <span class="copyright">&copy; 2026 Clean Fuels Investment Fund (CFIF) Inc.</span>
       </div>
@@ -302,15 +319,30 @@
 
   <!-- JAVASCRIPT -->
   <script>
-    /* Hamburger toggle */
+    // Hamburger Menu
     (function() {
-      var hamburger = document.getElementById('navHamburger');
-      var navLinks = document.getElementById('navLinks');
-      if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function() {
-          navLinks.classList.toggle('open');
-        });
+      var hamburger = document.querySelector('.hamburger');
+      var mobileMenu = document.getElementById('mobileMenu');
+      var overlay = document.getElementById('mobileOverlay');
+      var closeBtn = mobileMenu.querySelector('.mobile-close');
+      function openMenu() {
+        mobileMenu.classList.add('open');
+        overlay.classList.add('open');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
       }
+      function closeMenu() {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+      hamburger.addEventListener('click', openMenu);
+      closeBtn.addEventListener('click', closeMenu);
+      overlay.addEventListener('click', closeMenu);
+      mobileMenu.querySelectorAll('a').forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+      });
     })();
 
     /* IntersectionObserver fade-in */
