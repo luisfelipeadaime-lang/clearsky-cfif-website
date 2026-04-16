@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Investment Strategy | CFIF Project Criteria</title>
-  <meta name="description" content="CFIF invests in diversified emissions-reduction and clean fuel projects across Canada. Learn about our project criteria, investment approach, and portfolio strategy.">
+  <title>Fund Mechanics | How CFIF Deploys Grants to Canadian Clean Fuel Projects</title>
+  <meta name="description" content="CFIF deploys 100% of contributions as non-repayable grants to eligible Canadian clean fuel projects — biofuels, RNG, SAF, hydrogen — through independent technical evaluation. CFIF also structures capital to make projects bankable.">
   <link rel="canonical" href="https://www.cleanfuels.ca/investment.html">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Investment Strategy | CFIF Project Criteria">
-  <meta property="og:description" content="CFIF invests in diversified emissions-reduction and clean fuel projects across Canada. Learn about our project criteria, investment approach, and portfolio strategy.">
+  <meta property="og:title" content="Fund Mechanics | How CFIF Deploys Grants to Canadian Clean Fuel Projects">
+  <meta property="og:description" content="CFIF deploys 100% of contributions as non-repayable grants to eligible Canadian clean fuel projects — biofuels, RNG, SAF, hydrogen — through independent technical evaluation. CFIF also structures capital to make projects bankable.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.cleanfuels.ca/investment.html">
   <meta property="og:site_name" content="Clean Fuels Investment Fund">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Investment Strategy | CFIF Project Criteria">
-  <meta name="twitter:description" content="CFIF invests in diversified emissions-reduction and clean fuel projects across Canada. Learn about our project criteria, investment approach, and portfolio strategy.">
+  <meta name="twitter:title" content="Fund Mechanics | How CFIF Deploys Grants to Canadian Clean Fuel Projects">
+  <meta name="twitter:description" content="CFIF deploys 100% of contributions as non-repayable grants to eligible Canadian clean fuel projects — biofuels, RNG, SAF, hydrogen — through independent technical evaluation. CFIF also structures capital to make projects bankable.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/style.css">
@@ -36,11 +36,161 @@
       opacity: 1;
       transform: translateY(0);
     }
-    @media (max-width: 768px) {
-      .steps-4col { grid-template-columns: repeat(2, 1fr) !important; }
+
+    /* ECCC pill */
+    .eccc-pill {
+      display: inline-block;
+      background: #E6F4EC;
+      color: #2D7A4F;
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 2px 8px;
+      border-radius: 10px;
+      vertical-align: middle;
+      margin-left: 6px;
+      line-height: 1.6;
     }
-    @media (max-width: 480px) {
-      .steps-4col { grid-template-columns: 1fr !important; }
+
+    /* Nav Get in Touch button */
+    .nav-links .nav-btn-touch a {
+      background: var(--secondary, #6BBD45);
+      color: #fff !important;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      border-bottom: none !important;
+      transition: background 0.3s ease;
+    }
+    .nav-links .nav-btn-touch a:hover {
+      background: #4F9532;
+      color: #fff !important;
+      border-bottom-color: transparent !important;
+    }
+
+    /* 5-column step grid */
+    .steps-5col {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 18px;
+      margin: 32px 0;
+    }
+    .step-card {
+      background: #F8F9FA;
+      border: 1px solid #e2e6ea;
+      border-radius: 10px;
+      padding: 24px 18px;
+      text-align: center;
+    }
+    .step-num {
+      width: 44px;
+      height: 44px;
+      background: #1C5D7E;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .step-card:last-child .step-num {
+      background: #6BBD45;
+    }
+    .step-card h3 {
+      font-size: 0.95rem;
+      color: #1C5D7E;
+      margin: 0 0 8px;
+    }
+    .step-card p {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: #555;
+      margin: 0;
+    }
+
+    /* Tablet: 3 columns */
+    @media (max-width: 960px) {
+      .steps-5col {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Mobile: 1 column */
+    @media (max-width: 600px) {
+      .steps-5col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* 3-column footer */
+    .footer-3col {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+    .footer-col {
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+    .footer-col a {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.83rem;
+    }
+    .footer-col a:hover {
+      color: #fff;
+    }
+    .footer-col-left .footer-tagline {
+      color: rgba(255,255,255,0.7);
+      font-style: italic;
+      margin: 10px 0 6px;
+    }
+    .footer-col-left .footer-copy {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.8rem;
+    }
+    .footer-col-center ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .footer-col-center ul li {
+      margin-bottom: 6px;
+    }
+    .footer-col-right {
+      text-align: right;
+      color: rgba(255,255,255,0.7);
+    }
+    .footer-col-right a {
+      color: rgba(255,255,255,0.75);
+    }
+    .footer-col-right a:hover {
+      color: #fff;
+    }
+    .footer-legal {
+      max-width: 1140px;
+      margin: 28px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.4);
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .footer-3col {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+      }
+      .footer-col-right {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -51,17 +201,19 @@
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <img src="assets/cfif_image2.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;">
-        CFIF
+        <span>CFIF</span>
+        <span class="eccc-pill">ECCC Approval Pending</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="why-cfif.html">Why CFIF</a></li>
-        <li><a href="investment.html" class="active">Investment Strategy</a></li>
+        <li><a href="why-cfif.html">For Primary Suppliers</a></li>
+        <li><a href="investment.html" class="active">Fund Mechanics</a></li>
         <li><a href="governance.html">Governance</a></li>
         <li><a href="contribute.html">Contribute</a></li>
-        <li><a href="apply.html">Apply</a></li>
+        <li><a href="apply.html">For Project Developers</a></li>
+        <li class="nav-btn-touch"><a href="contribute.html">Get in Touch</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Toggle menu">
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
         <span></span>
@@ -71,8 +223,8 @@
 
   <!-- ─── PAGE HEADER ─────────────────────────────── -->
   <header class="page-header">
-    <h1>Investment Strategy</h1>
-    <p>How CFIF allocates capital to maximize compliance value and clean fuel impact.</p>
+    <h1>Fund Mechanics</h1>
+    <p>How CFIF Deploys Capital</p>
   </header>
 
   <!-- ─── MAIN CONTENT ────────────────────────────── -->
@@ -81,34 +233,46 @@
       <div class="container prose">
 
         <span class="section-label">How It Works</span>
-        <h2>4-Step Contribution Process</h2>
+        <h2>5-Step Contribution Process</h2>
         <p>Contributing to CFIF is straightforward. Your contribution is deployed as a non-repayable grant to eligible clean fuel projects across Canada.</p>
 
-        <div class="steps-4col" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:32px 0;">
-          <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:24px;text-align:center;">
-            <div style="width:44px;height:44px;background:#1C5D7E;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:700;font-size:1.1rem;">1</div>
-            <h3 style="font-size:0.95rem;color:#1C5D7E;margin:0 0 8px;">Determine Obligation</h3>
-            <p style="font-size:0.85rem;line-height:1.5;color:#555;margin:0;">Calculate your annual CFR reduction requirement and ERFP-eligible portion (up to 10%).</p>
+      </div>
+
+      <div class="container">
+        <div class="steps-5col fade-in">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h3>Contributions</h3>
+            <p>Primary Suppliers direct up to 10% of their annual reduction requirement into CFIF</p>
           </div>
-          <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:24px;text-align:center;">
-            <div style="width:44px;height:44px;background:#1C5D7E;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:700;font-size:1.1rem;">2</div>
-            <h3 style="font-size:0.95rem;color:#1C5D7E;margin:0 0 8px;">Contribute at $379/credit</h3>
-            <p style="font-size:0.85rem;line-height:1.5;color:#555;margin:0;">Fixed 2025 price, inflation-adjusted annually (~$410 through 2029). Budget with certainty.</p>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h3>Aggregation</h3>
+            <p>CFIF pools contributions into an industry-wide fund dedicated to Canadian clean fuel projects</p>
           </div>
-          <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:24px;text-align:center;">
-            <div style="width:44px;height:44px;background:#1C5D7E;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:700;font-size:1.1rem;">3</div>
-            <h3 style="font-size:0.95rem;color:#1C5D7E;margin:0 0 8px;">CFIF Deploys Grants</h3>
-            <p style="font-size:0.85rem;line-height:1.5;color:#555;margin:0;">Non-repayable grants fund diversified clean fuel projects: biofuels, RNG, SAF, hydrogen.</p>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h3>Evaluation</h3>
+            <p>Independent technical, financial, and regulatory assessment against CFR rules and CI methodologies</p>
           </div>
-          <div style="background:#F8F9FA;border:1px solid #e2e6ea;border-radius:10px;padding:24px;text-align:center;">
-            <div style="width:44px;height:44px;background:#6BBD45;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-weight:700;font-size:1.1rem;">4</div>
-            <h3 style="font-size:0.95rem;color:#1C5D7E;margin:0 0 8px;">Receive Compliance Credit</h3>
-            <p style="font-size:0.85rem;line-height:1.5;color:#555;margin:0;">Full CFR compliance credit for your contribution. Simplified regulatory reporting.</p>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h3>Deployment</h3>
+            <p>Non-repayable grants to projects that deliver verified emissions reductions and clean fuel capacity</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">5</div>
+            <h3>Reporting</h3>
+            <p>Transparent reporting to contributors on funded projects, emissions outcomes, and compliance alignment</p>
           </div>
         </div>
+      </div>
+
+      <div class="container prose" style="margin-top: 48px;">
 
         <h2>Capital Allocation Strategy</h2>
         <p>CFIF maintains a diversified portfolio of eligible clean fuel and emissions-reduction projects. Capital allocation follows a disciplined framework that balances compliance credit generation, risk management, and measurable environmental outcomes.</p>
+        <p>CFIF does not seek financial returns. 100% of contributed funds are deployed as non-repayable grants. Where appropriate, CFIF structures capital to absorb the regulatory risk that prevents institutional lenders from participating &mdash; directly unlocking bank project finance alongside its own capital.</p>
         <p>Each investment undergoes rigorous due diligence, including technical feasibility review, regulatory eligibility confirmation, and credit-generation modelling. By spreading capital across project types, development stages, and geographies within Canada, CFIF reduces concentration risk.</p>
 
         <h2>Project Categories</h2>
@@ -247,13 +411,13 @@
         <p>Every project undergoes independent technical due diligence before capital is committed. Post-investment, the fund maintains ongoing monitoring and reporting, with regular portfolio reviews by the investment committee.</p>
 
         <div class="disclaimer">
-          <p style="margin-bottom: 0;">This page provides general information about CFIF's investment approach. It does not constitute investment advice, legal advice, or an offer to sell or solicitation of an offer to buy any securities. Prospective contributors should consult their own legal and financial advisors.</p>
+          <p style="margin-bottom: 0;">This page provides general information about CFIF's approach to deploying capital. It does not constitute investment advice, legal advice, or an offer to sell or solicitation of an offer to buy any securities. Prospective contributors should consult their own legal and financial advisors.</p>
         </div>
       </div>
     </section>
 
     <!-- ─── CTA BANNER ──────────────────────────────── -->
-    <section class="cta-banner">
+    <section class="cta-banner fade-in">
       <h2>Explore How Your Contribution Creates Impact</h2>
       <p>See how CFIF channels industry capital into real clean fuel projects.</p>
       <a href="contribute.html" class="btn btn-primary">Contribute to CFIF</a>
@@ -262,31 +426,69 @@
 
   <!-- ─── FOOTER ──────────────────────────────────── -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <img src="assets/cfif_image2.png" alt="CFIF Logo" height="28" style="max-height:28px;width:auto;opacity:0.85;">
+    <div class="footer-3col">
+      <!-- Left column: brand -->
+      <div class="footer-col footer-col-left">
+        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo" height="40" style="max-height:40px;width:auto;opacity:0.9;">
+        <div class="footer-tagline">By industry, for industry</div>
+        <div class="footer-copy">&copy; 2026 Clean Fuels Investment Fund (CFIF) Inc.</div>
       </div>
-      <div class="footer-text">
-        <span class="footer-url">cleanfuels.ca</span><br>
-        Clean Fuels Investment Fund (CFIF) Inc.<br>
-        <span style="font-size:0.8rem;color:rgba(255,255,255,0.4);font-style:italic;">CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval.</span><br>
-        <a href="index.html">Home</a> &middot; <a href="why-cfif.html">Why CFIF</a> &middot; <a href="investment.html">Investment Strategy</a> &middot; <a href="governance.html">Governance</a> &middot; <a href="contribute.html">Contribute</a> &middot; <a href="apply.html">Apply</a>
+
+      <!-- Center column: navigation -->
+      <div class="footer-col footer-col-center">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="investment.html">Fund Mechanics</a></li>
+          <li><a href="why-cfif.html">For Primary Suppliers</a></li>
+          <li><a href="apply.html">For Project Developers</a></li>
+          <li><a href="governance.html">Governance &amp; Team</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
       </div>
+
+      <!-- Right column: contact -->
+      <div class="footer-col footer-col-right">
+        <div style="margin-bottom:6px;"><a href="mailto:CFIF@cleanfuels.ca">CFIF@cleanfuels.ca</a></div>
+        <div style="margin-bottom:6px;"><a href="mailto:aa@cleanfuels.ca">aa@cleanfuels.ca</a></div>
+        <div style="margin-bottom:6px;"><a href="tel:+14039995757">403-999-5757</a></div>
+        <div><a href="https://www.cleanfuels.ca" target="_blank" rel="noopener">www.cleanfuels.ca</a></div>
+      </div>
+    </div>
+
+    <!-- Full-width legal disclaimer -->
+    <div class="footer-legal">
+      CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval. This website provides general information only and does not constitute investment advice, legal advice, or an offer to sell or solicitation of an offer to buy any securities.
     </div>
   </footer>
 
   <!-- ─── JAVASCRIPT ──────────────────────────────── -->
   <script>
     /* Hamburger toggle */
-    document.querySelector('.nav-hamburger').addEventListener('click', function () {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
+    (function () {
+      var hamburger = document.getElementById('navHamburger');
+      var navLinks = document.getElementById('navLinks');
+
+      hamburger.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
+      });
+
+      // Close menu on link click (mobile)
+      navLinks.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navLinks.classList.remove('open');
+        });
+      });
+    })();
 
     /* IntersectionObserver fade-in */
     (function () {
-      var style = document.createElement('style');
-      style.textContent = '.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}.fade-in.visible{opacity:1;transform:translateY(0)}';
-      document.head.appendChild(style);
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.fade-in').forEach(function (el) {
+          el.classList.add('visible');
+        });
+        return;
+      }
 
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
