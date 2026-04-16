@@ -79,7 +79,7 @@
     .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
     .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1C5D7E; font-weight: 700; font-size: 1.25rem; letter-spacing: 0.02em; }
     .nav-logo svg { flex-shrink: 0; }
-    .eccc-pill { display: inline-block; background: #E6F4EC; color: #2D7A3A; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.02em; white-space: nowrap; }
+    .announcement-bar { background: #E6F4EC; border-bottom: 1px solid #c8e6c9; padding: 8px 24px; text-align: center; font-size: 0.82rem; font-weight: 600; color: #2D7A3A; letter-spacing: 0.02em; }
     .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; margin: 0; padding: 0; }
     .nav-links a { text-decoration: none; color: #555; font-weight: 500; font-size: 0.9rem; transition: color 0.2s; position: relative; }
     .nav-links a:hover, .nav-links a.active { color: #1C5D7E; }
@@ -216,21 +216,21 @@
 </head>
 <body>
 
+  <div class="announcement-bar">ECCC Approval Pending — CFIF's ERFP application under Canada's Clean Fuel Regulations is under review.</div>
+
   <header class="site-header">
     <div class="nav-container">
       <a href="index.html" class="nav-logo" aria-label="CFIF Home">
         <img src="assets/cfif_image2.png" alt="CFIF Logo" height="38" style="max-height:38px;width:auto;">
         <span>CFIF</span>
-        <span class="eccc-pill">ECCC Approval Pending</span>
       </a>
       <nav aria-label="Main navigation">
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="why-cfif.html">For Primary Suppliers</a></li>
           <li><a href="investment.html">Fund Mechanics</a></li>
           <li><a href="governance.html">Governance</a></li>
           <li><a href="contribute.html">Contribute</a></li>
-          <li><a href="apply.html">For Project Developers</a></li>
+          <li><a href="apply.html">Apply</a></li>
           <li><a href="contribute.html" class="nav-cta-btn">Get in Touch</a></li>
         </ul>
       </nav>
@@ -249,12 +249,11 @@
         <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
       </svg>
     </button>
-    <a href="index.html" class="active">Home</a>
     <a href="why-cfif.html">For Primary Suppliers</a>
     <a href="investment.html">Fund Mechanics</a>
     <a href="governance.html">Governance</a>
     <a href="contribute.html">Contribute</a>
-    <a href="apply.html">For Project Developers</a>
+    <a href="apply.html">Apply</a>
     <a href="contribute.html" style="color:#6BBD45;font-weight:600;">Get in Touch</a>
   </div>
 
@@ -587,7 +586,7 @@
   <footer class="site-footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo" height="36" style="max-height:36px;width:auto;opacity:0.9;">
+        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo" height="36" style="max-height:36px;max-width:180px;width:auto;opacity:0.9;">
         <p class="footer-tagline">By industry, for industry.</p>
         <p class="footer-copy">&copy; 2026 CFIF Inc.</p>
       </div>

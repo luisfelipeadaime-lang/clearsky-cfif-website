@@ -53,11 +53,23 @@ img { max-width: 100%; height: auto; }
 
 .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
 
+/* ─── ANNOUNCEMENT BAR ──────────────────────────── */
+.announcement-bar {
+  background: #E6F4EC;
+  border-bottom: 1px solid #c8e6c9;
+  padding: 8px 24px;
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #2D7A3A;
+  letter-spacing: 0.02em;
+}
+
 /* ─── NAVIGATION ─────────────────────────────── */
 .site-header { position: sticky; top: 0; z-index: 1000; background: #fff; border-bottom: 1px solid #e2e6ea; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
 .nav-container { max-width: 1200px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 72px; }
 .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--primary); font-weight: 700; font-size: 1.25rem; letter-spacing: 0.02em; }
-.eccc-pill { display: inline-block; background: #E6F4EC; color: #2D7A3A; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.02em; white-space: nowrap; }
+/* .eccc-pill removed — status moved to .announcement-bar (S53d) */
 .nav-links { display: flex; align-items: center; gap: 24px; list-style: none; margin: 0; padding: 0; }
 .nav-links a { text-decoration: none; color: #555; font-weight: 500; font-size: 0.9rem; transition: color 0.2s; position: relative; }
 .nav-links a:hover, .nav-links a.active { color: var(--primary); }
@@ -480,4 +492,5 @@ img { max-width: 100%; height: auto; }
   .stats-grid { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
   .nav-container { height: 60px; }
+  .announcement-bar { font-size: 0.75rem; padding: 6px 16px; }
 }
