@@ -37,25 +37,12 @@
     .alt-contact p { margin-bottom: 6px; font-size: 0.9rem; color: var(--text-light); }
     .alt-contact p:last-child { margin-bottom: 0; font-size: 0.85rem; font-style: italic; }
     .alt-contact a { font-weight: 600; }
-    .footer-grid { max-width: var(--max-width); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; align-items: start; }
-    .footer-col { font-size: 0.85rem; line-height: 1.7; }
-    .footer-col a { color: rgba(255,255,255,0.6); font-size: 0.8rem; }
-    .footer-col a:hover { color: var(--white); }
-    .footer-col-brand { display: flex; flex-direction: column; gap: 10px; }
-    .footer-col-brand img { max-height: 40px; width: auto; opacity: 0.9; }
-    .footer-col-brand .tagline { font-size: 0.9rem; font-weight: 500; color: rgba(255,255,255,0.8); font-style: italic; }
-    .footer-col-brand .copyright { font-size: 0.8rem; color: rgba(255,255,255,0.45); }
-    .footer-col-nav a { display: inline; }
-    .footer-col-contact { text-align: right; color: rgba(255,255,255,0.7); font-size: 0.85rem; }
-    .footer-col-contact a { color: rgba(255,255,255,0.7); font-size: 0.85rem; }
-    .footer-col-contact a:hover { color: var(--white); }
-    .footer-legal { max-width: var(--max-width); margin: 24px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.8rem; color: rgba(255,255,255,0.4); font-style: italic; }
-    @media (max-width: 768px) { .apply-grid { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; text-align: center; } .footer-col-contact { text-align: center; } }
+    @media (max-width: 768px) { .apply-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 
-  <div class="announcement-bar">ECCC Approval Pending — CFIF's ERFP application under Canada's Clean Fuel Regulations is under review.</div>
+  <div class="announcement-bar">CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval.</div>
 
   <header class="site-header">
     <div class="nav-container">
@@ -298,30 +285,31 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="footer-grid">
-      <div class="footer-col footer-col-brand">
-        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo" height="36" style="max-height:36px;max-width:180px;width:auto;opacity:0.9;">
-        <span class="tagline">By industry, for industry</span>
-        <span class="copyright">&copy; 2026 Clean Fuels Investment Fund (CFIF) Inc.</span>
+      <div class="footer-brand">
+        <img src="assets/cfif_logo_with_text.png" alt="CFIF Logo">
+        <p class="footer-tagline">By industry, for industry.</p>
+        <p class="footer-copy">&copy; 2026 CFIF Inc.</p>
       </div>
-      <div class="footer-col footer-col-nav" style="text-align:center;">
-        <a href="index.html">Home</a> &nbsp;|&nbsp;
-        <a href="investment.html">Fund Mechanics</a> &nbsp;|&nbsp;
-        <a href="why-cfif.html">For Primary Suppliers</a> &nbsp;|&nbsp;
-        <a href="apply.html">For Project Developers</a><br>
-        <a href="governance.html">Governance &amp; Team</a> &nbsp;|&nbsp;
-        <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+      <div class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="investment.html">Fund Mechanics</a>
+        <a href="why-cfif.html">For Primary Suppliers</a>
+        <a href="apply.html">For Project Developers</a>
+        <a href="governance.html">Governance &amp; Team</a>
+        <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
       </div>
-      <div class="footer-col footer-col-contact">
-        <a href="mailto:CFIF@cleanfuels.ca">CFIF@cleanfuels.ca</a><br>
-        <a href="mailto:aa@cleanfuels.ca">aa@cleanfuels.ca</a> &nbsp;|&nbsp; 403-999-5757<br>
+      <div class="footer-contact">
+        <a href="mailto:CFIF@cleanfuels.ca">CFIF@cleanfuels.ca</a>
+        <a href="mailto:aa@cleanfuels.ca">aa@cleanfuels.ca</a>
+        <a href="tel:+14039995757">403-999-5757</a>
         <a href="https://www.cleanfuels.ca" target="_blank" rel="noopener">www.cleanfuels.ca</a>
       </div>
     </div>
-    <div class="footer-legal">
-      CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval. Nothing on this website constitutes an offer or solicitation. All funding decisions are subject to CFIF's due diligence process and investment committee approval.
+    <div class="footer-disclaimer">
+      CFIF's application under Canada's Clean Fuel Regulations is pending ECCC approval. All contribution structures, pricing, and fund mechanics described on this website are subject to regulatory approval and may change. Nothing on this website constitutes legal, financial, or compliance advice.
     </div>
   </footer>
 
